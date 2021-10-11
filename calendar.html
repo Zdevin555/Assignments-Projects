@@ -1,0 +1,50 @@
+ <!-- 
+ static html structure of this calendar
+ AUTHOR: Diwen Zhang
+ EMAIL:  zhangdiw@sheridancollege.ca
+ CREATED: 2021-06-05
+ UPDATED: 2021-06-12 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+
+    <!-- JavaScript -->
+    <script src="js/Calendar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Logger.js"></script>
+
+    <!-- CSS -->
+    <link href="css/calendar.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- A block for the month/year and the prev/next buttons -->
+    <div id="cal_header">
+        <div class="col1">
+                <a id="btn_prev" href="#"> &lt; </a>
+                <a id="btn_next" href="#"> &gt; </a>
+        </div>
+        <div class="col2">
+            <div id="cal_months"></div>
+            <div id="cal_years"></div>
+        </div>
+        <div class="col3"></div>
+    </div>
+    <!-- A block for weekdays -->
+    <div id="cal_days">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednsday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+    </div>
+    <!-- A block for the dates of a month -->
+    <div id="cal_dates"></div>  
+</body>
+</html>
